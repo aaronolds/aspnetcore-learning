@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable",
+    "emitEntryPoint": true
+  },
+  "dependencies": {
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0"
+  },
+  
+  // "commands": {
+  //   "run": "run server.urls=http://localhost:5000",
+  //   "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.Kestrel --server.urls http://localhost:5000",
+  //   "weblistener": "Microsoft.AspNet.Hosting --server WebListener --server.urls http://localhost:5004"
+  // },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        },
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0"
+      },
+      "imports": "dnxcore50"
+    }
+  }
+}
